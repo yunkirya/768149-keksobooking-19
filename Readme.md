@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг» [![Build status][travis-image]][travis-url]
 
 * Студент: [Кирилл Юн](https://up.htmlacademy.ru/javascript/19/user/768149).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Соколов](https://htmlacademy.ru/profile/id53279).
 
 ---
 
