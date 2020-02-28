@@ -19,17 +19,23 @@ function getRandomInt(min, max) {
 var getFeatures = function () {
   var features = [];
   for (i = 0; i < getRandomInt(0, FEATURES.length); i++) {
-    features.push(FEATURES[getRandomInt(0, FEATURES.length)]);
+    var getRandomIndex = FEATURES[getRandomInt(0, FEATURES.length)];
+    if (features.indexOf(getRandomIndex) == -1) {
+      features.push(getRandomIndex);
+    }
   }
   return features;
 };
 
 var getPhotos = function () {
-  var features = [];
+  var photos = [];
   for (i = 0; i < getRandomInt(0, PHOTOS.length); i++) {
-    features.push(PHOTOS[getRandomInt(0, PHOTOS.length)]);
+    var getRandomIndex = PHOTOS[getRandomInt(0, PHOTOS.length)];
+    if (photos.indexOf(getRandomIndex) == -1) {
+      photos.push(getRandomIndex);
+    }
   }
-  return features;
+  return photos;
 };
 
 var getOffers = function (numberOfOffers) {
